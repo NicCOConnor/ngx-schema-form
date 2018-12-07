@@ -10,8 +10,7 @@
     "build-demo": "ng build --prod --base-href /ngx-schema-form/dist/ngx-schema-form/",
     "test": "ng test schema-form --watch=false",
     "lint": "ng lint",
-    "prepare": "npm run build:lib",
-    "prepublishOnly": "npm run build:lib"
+    "postinstall": "npm run build:lib"
   },
   "private": true,
   "dependencies": {
